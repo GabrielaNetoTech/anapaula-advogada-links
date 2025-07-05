@@ -611,10 +611,7 @@ body::after {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;}
 }
-/* Esconde setas do carrossel no mobile */
-@media (max-width: 479px) {
-    .carousel-arrows { display: none;}
-}
+
 /* Acessibilidade: reduz animações se necessário */
 @media (prefers-reduced-motion: reduce) {
     * {

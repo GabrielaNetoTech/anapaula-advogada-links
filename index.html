@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Paula Diovana - Advogada</title>
+    <meta name="description" content="Ana Paula Diovana -Advogada">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+  <button class="theme-toggle-minimal" aria-label="Alternar tema" style="border: 2px solid rgba(78, 77, 77, 0.11); background-color: rgba(78, 77, 77, 0.11) ">
+  <span class="theme-icon theme-sun" title="Modo claro">
+    <i class="ph ph-sun"></i>
+  </span>
+  <span class="theme-icon theme-moon" title="Modo escuro">
+    <i class="ph ph-moon"></i>
+  </span>
+</button>
+
+    <div class="bg-effects"></div>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1000242689.jpg-bjb51PiM5TFfrgAGAgds5YOePBfVgw.jpeg" alt="Ana Paula Diovana - Advogada" width="120" height="120" loading="lazy">
+            </div>
+            <h1 class="name">Ana Paula Diovana</h1>
+            <p class="title">Advogada</p>
+            <p class="description">Advocacia comprometida com a excelência jurídica e atendimento personalizado para cada cliente.</p>
+            <div class="oab-info">OAB/PE 67.890</div>
+        </header>
+
+        <!-- Services Carousel Section -->
+        <section class="services-section">
+            <h2 class="section-title">Áreas de Atuação</h2>
+            <div class="carousel-container" role="region" aria-label="Carrossel de serviços">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <span class="service-icon"><i class="ph ph-scales"></i></span>
+                        <h3 class="service-title">Direito Civil</h3>
+                        <p class="service-description">Soluções jurídicas para questões do dia a dia</p>
+                        <ul class="service-items">
+                            <li>Contratos e responsabilidade civil</li>
+                            <li>Direito de família e sucessões</li>
+                            <li>Ações de cobrança</li>
+                            <li>Direito das obrigações</li>
+                        </ul>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <span class="service-icon"><i class="ph ph-user-circle"></i></span>
+                        <h3 class="service-title">Direito Previdenciário</h3>
+                        <p class="service-description">Consultoria jurídica para seu negócio</p>
+                        <ul class="service-items">
+                            <li>Abertura de empresas</li>
+                            <li>Contratos empresariais</li>
+                            <li>Consultoria preventiva</li>
+                            <li>Recuperação judicial</li>
+                        </ul>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <span class="service-icon"><i class="ph ph-shield-check"></i></span>
+                        <h3 class="service-title">Direito Penal</h3>
+                        <p class="service-description">Defesa criminal especializada</p>
+                        <ul class="service-items">
+                            <li>Defesa em processos criminais</li>
+                            <li>Acompanhamento de inquéritos</li>
+                            <li>Assistência à acusação</li>
+                            <li>Habeas corpus</li>
+                        </ul>
+                    </div>
+                         <!-- Card 4 -->
+                    <div class="service-card">
+                        <span class="service-icon"><i class="ph ph-briefcase"></i></span>
+                        <h3 class="service-title">Direito do Trabalho</h3>
+                        <p class="service-description">Proteção dos direitos trabalhistas</p>
+                        <ul class="service-items">
+                            <li>Reclamatórias trabalhistas</li>
+                            <li>Acordos extrajudiciais</li>
+                            <li>Consultoria preventiva</li>
+                            <li>Rescisões contratuais</li>
+                        </ul>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="service-card">
+                        <span class="service-icon"><i class="ph ph-users"></i></span>
+                        <h3 class="service-title">Direito do Consumidor</h3>
+                        <p class="service-description">Defesa dos seus direitos como consumidor</p>
+                        <ul class="service-items">
+                            <li>Ações contra fornecedores</li>
+                            <li>Processos em Juizados Especiais</li>
+                            <li>Relações de consumo</li>
+                            <li>Danos morais e materiais</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="carousel-arrows arrow-left" onclick="previousSlide()" aria-label="Serviço anterior">
+                    <i class="ph ph-caret-left"></i>
+                </button>
+                <button class="carousel-arrows arrow-right" onclick="nextSlide()" aria-label="Próximo serviço">
+                    <i class="ph ph-caret-right"></i>
+                </button>
+            </div>
+            <div class="carousel-nav" id="carouselNav" role="navigation" aria-label="Navegação do carrossel"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contato">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-links">
+                <a href="https://wa.me/5587991019508?text=Olá! Gostaria de obter mais informação sobre..." class="contact-link" target="_blank" rel="noopener noreferrer">
+                    <span><i class="ph ph-whatsapp-logo"></i></span>
+                    WhatsApp
+                </a>
+                <a href="mailto:anapauladiovana45@agmail.com" class="contact-link">
+                    <span><i class="ph ph-envelope"></i></span>
+                    E-mail
+                </a>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <img src="logo2.png" alt="">
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-copyright-main">
+                © 2025 Ana Paula Diovana - Advogada. Todos os direitos reservados.
+            </p>
+            <p>OAB/PE 67.890</p>
+            <p class="footer-copyright">
+                Desenvolvido por
+                <a href="https://www.instagram.com/gabrielasneto/" class="footer-anchor" target="_blank"
+                    rel="noopener noreferrer">
+                    @gabrielasneto
+                </a>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
